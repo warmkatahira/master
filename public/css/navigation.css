@@ -1,0 +1,89 @@
+#dropmenu {
+  list-style-type: none;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  background: rgb(134, 239, 172);
+  border-bottom: 5px solid rgb(75, 85, 99);
+  border-radius: 3px 3px 0 0;
+  z-index: 999;
+}
+
+#dropmenu li {
+  position: relative;
+  width: 25%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#dropmenu li a {
+  display: block;
+  margin: 0;
+  padding: 15px 0 11px;
+  color: rgb(75, 85, 99);
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+#dropmenu li ul {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 3px 3px;
+}
+
+#dropmenu li:last-child ul {
+  left: -100%;
+  width: 100%;
+}
+
+#dropmenu li ul li {
+  overflow: hidden;
+  width: 200%;
+  height: 0;
+  color: #fff;
+  transition: 0.2s;
+}
+
+#dropmenu li ul li a {
+  padding: 13px 15px;
+  background: rgb(134, 239, 172);
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(75, 85, 99);
+}
+
+#dropmenu li:hover > a {
+  background: rgb(22, 163, 74);
+  color: white;
+}
+
+#dropmenu > li:hover > a {
+  border-radius: 3px 3px 0 0;
+}
+
+#dropmenu li:hover ul li {
+  overflow: visible;
+  height: 38px;
+  border-top: 1px solid rgb(75, 85, 99);
+  border-bottom: 1px solid rgb(75, 85, 99);
+}
+
+#dropmenu li:hover ul li:first-child {
+  border-top: 0;
+}
+
+#dropmenu li:hover ul li:last-child {
+  border-bottom: 0;
+}
+
+#dropmenu li:hover ul li:last-child a {
+  border-radius: 0 0 3px 3px;
+}
